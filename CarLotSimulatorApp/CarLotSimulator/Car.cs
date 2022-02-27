@@ -4,11 +4,12 @@ using System.Text;
 
 namespace CarLotSimulator
 {
-   public class Car
+   public class Car : CarLot
     {
         public Car()
         {
-            // DEFAULT 
+            numberOfCars++;
+            
         }
         // A constructor that assigns property
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDrivable)

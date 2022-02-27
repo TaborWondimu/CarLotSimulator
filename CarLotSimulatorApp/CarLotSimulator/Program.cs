@@ -17,7 +17,6 @@ namespace CarLotSimulator
 
             //Now that the Car class is created we can instanciate 3 new cars
             var carOne = new Car();
-
             //Set the properties for each of the cars
             // This is using the dot notation
             carOne.Year = 2018;
@@ -42,7 +41,7 @@ namespace CarLotSimulator
             };
             // This is using the constructor to allow parameters
             var lastCar = new Car(2021, "Honda", "Civic", "HGHGHGH", "NLUP", true);
-
+            Console.WriteLine($"Number of Cars is = {Car.numberOfCars}");
 
             //Call each of the methods for each car
           //  carOne.MakeEngineNoise(carOne.EngineNoise);
@@ -82,6 +81,10 @@ namespace CarLotSimulator
                 Console.WriteLine($"Car on Lot is {car.ListOfCars}, Price of car is ${car.PriceOfCars}, Year of Car is {car.YearOfCars}, Available : {car.IsAvailable}");
             }
 
+            
+         
+
+             
         }
     }
 }
